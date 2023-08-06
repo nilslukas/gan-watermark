@@ -1,0 +1,24 @@
+watermarking_key_args:
+  key_ckpt: ../pretrained_models/ptw-key-40-bit-ffhq-256-2.pt  # the watermarking key.
+
+  # all watermarking args will be loaded from key. The following args are overwritten.
+  ir_se50_weights: ../pretrained_models/model_ir_se50.pth
+  message: "put your message here"
+  truncation_psi: 0.7  # truncation psi during generation
+
+embed_args:
+  ckpt: ../pretrained_models/ptw-generator-40-bit-ffhq-256-2.pt  # where to save the model
+  ptw_lr: 0.0001  # learning rate for the generator's optimization
+  lambda_lpips: 1 # LPIPS similarity loss
+  lambda_id: 1 # ID loss (please provide a pre-trained facial identity model to the watermarking_args)
+
+model_args:
+  model_type: nvlabs
+  model_arch: stylegan2
+  model_ckpt: https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada/pretrained/paper-fig7c-training-set-sweeps/ffhq70k-paper256-ada.pkl
+
+env_args:    # machine specs. lower batch size if needed.
+  batch_size: 64
+  log_every: 25
+  save_every: 100
+  logging_tool: wandb

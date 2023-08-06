@@ -1,0 +1,3 @@
+detect_args:
+  image_folder: ../generated_images/ptw-generator-40-bit-ffhq-256-2/
+  watermark_key_ckpt: ../pretrained_models/ptw-generator-40-bit-ffhq-256-2.pt

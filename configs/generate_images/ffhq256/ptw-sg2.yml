@@ -1,0 +1,5 @@
+gen_img_args:
+  num_images: 1000  # number of images to generate
+  outdir: ../generated_images/ptw-generator-40-bit-ffhq-256-2/
+  truncation_psi: 0.7
+  generator_ckpt: ../pretrained_models/ptw-generator-40-bit-ffhq-256-2.pt

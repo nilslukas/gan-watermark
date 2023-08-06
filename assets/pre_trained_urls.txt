@@ -1,0 +1,22 @@
+# StyleGAN2
+"ffhq-stylegan2-1024": "https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada/pretrained/ffhq.pkl",
+"ffhq-stylegan2-256": "https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada/pretrained/paper-fig7c-training-set-sweeps/ffhq70k-paper256-ada.pkl",
+"lsun-car-stylegan2-512": "http://d36zk2xti64re0.cloudfront.net/stylegan2/networks/stylegan2-car-config-f.pkl",
+"lsun-church-stylegan2-256": "http://d36zk2xti64re0.cloudfront.net/stylegan2/networks/stylegan2-church-config-f.pkl",
+"horse-stylegan2-256": "http://d36zk2xti64re0.cloudfront.net/stylegan2/networks/stylegan2-horse-config-f.pkl",
+"afhq-wild-stylegan2-512": "https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada/pretrained/afhqwild.pkl",
+"brecahad-stylegan2-512": "https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada/pretrained/brecahad.pkl",
+"afhq-dog-stylegan2-1024": "https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada/pretrained/afhqdog.pkl",
+"afhq-cat-stylegan2-1024": "https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada/pretrained/afhqcat.pkl",
+"metfaces-stylegan2-512": "https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada/pretrained/metfaces.pkl",
+
+# StyleGAN-XL
+"stylegan-xl-256": "https://s3.eu-central-1.amazonaws.com/avg-projects/stylegan_xl/models/ffhq256.pkl",
+"stylegan-xl-512": "https://s3.eu-central-1.amazonaws.com/avg-projects/stylegan_xl/models/ffhq512.pkl",
+
+# StyleGAN-3
+"metfaces-stylegan3-1024": "https://api.ngc.nvidia.com/v2/models/nvidia/research/stylegan3/versions/1/files/stylegan3-r-metfaces-1024x1024.pkl",
+"afhq-v2-stylegan3-512": "https://api.ngc.nvidia.com/v2/models/nvidia/research/stylegan3/versions/1/files/stylegan3-t-afhqv2-512x512.pkl",
+"ffhq-stylegan3-1024": "https://api.ngc.nvidia.com/v2/models/nvidia/research/stylegan3/versions/1/files/stylegan3-r-ffhq-1024x1024.pkl",
+"ffhq-stylegan3-256": "https://api.ngc.nvidia.com/v2/models/nvidia/research/stylegan3/versions/1/files/stylegan3-r-ffhqu-256x256.pkl"
+

@@ -1,0 +1,33 @@
+watermarking_key_args:
+  bitlen: 40            # number of bits embedded into each image.
+  watermark_type: ptw       # ptw, yu1 or yu2
+  decoder_arch: resnet18    # resnet18 to resnet101
+
+  ## Load and save
+  key_ckpt: ../pretrained_models/ptw-key-40-bit-ffhq-256-2.pt
+  ir_se50_weights: ../pretrained_models/model_ir_se50.pth
+
+  ## losses
+  keygen_lambda_lpips: .75      # LPIPS (image similarity)
+  keygen_lambda_id: .1          # ID loss, only for FFHQ. Also requires providing a valid path to pre-trained weights.
+
+  ## learning rates
+  lr_mapper: 0.001     # learning rate for the mapper
+  lr_decoder: 0.0001  # learning rate for the decoder
+
+  # mapper config.
+  weight_mapper: True  # modulate the embedded_message through the generator's weights
+  style_mapper: True       # modulate the embedded_message through the generator's latent space
+  bias_mapper: True        # modulate the bias.
+
+model_args:  # use a pre-trained StyleGAN2
+  model_type: nvlabs
+  model_arch: stylegan2
+  model_ckpt: https://nvlabs-fi-cdn.nvidia.com/stylegan2-ada/pretrained/paper-fig7c-training-set-sweeps/ffhq70k-paper256-ada.pkl
+
+env_args: # Machine specs. If out of memory, reduce batch-size.
+  log_every: 50
+  save_every: 500
+  batch_size: 32
+  gradient_accumulation_steps: 1
+  logging_tool: wandb
