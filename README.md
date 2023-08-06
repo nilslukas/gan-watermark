@@ -80,8 +80,7 @@ $ pip install -e .
 **Pre-Trained Models**
 
 Create a folder `pretrained_models` and download the following files:
-* [`model_ir_se50.pth`](https://www.dropbox.com/s/abk2q3glwa0k43y/model_ir_se50.pth?dl=0) (_175 MB_): A model to compare facial identities. Only needed for facial datasets. 
-* ... 
+* [`model_ir_se50.pth`](https://www.dropbox.com/s/abk2q3glwa0k43y/model_ir_se50.pth?dl=0) (_175 MB_): A model to compare facial identities. 
 
 ## Example Usage
 1.) Train a watermarking key from scratch. Creates a watermarking key `pretrained_models/ptw-key-40-bit-ffhq-256-2.pt`.
@@ -100,7 +99,7 @@ python generate_images.py --config_path ../configs/generate_images/ffhq256/ptw-s
 ```
 4.) Verify watermarked images. Outputs statistics on the bit-accuracy of the watermark for each image. 
 ```shell
-python generate_images.py --config_path ../configs/verify_images/ffhq256/ptw-sg2.yml
+python detect.py --config_path ../configs/detect/ffhq256/ptw-sg2.yml
 ```
 
 ## Logging 
