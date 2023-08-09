@@ -174,6 +174,7 @@ class PTWWatermarkingKey(WatermarkingKey):
 
                 self.mappers.set_msg(msg)  # forward the embedded_message to the mappers.
                 _, x_wm = g_target.generate(w=w)
+                x_wm = torch.clamp(x_wm, -1, 1)    # force to be in valid domain
                 extracted_msg = self.extract(preprocessing(x_wm), sigmoid=False)
 
                 # classifier loss
