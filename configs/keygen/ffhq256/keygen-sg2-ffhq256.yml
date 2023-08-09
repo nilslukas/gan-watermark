@@ -1,15 +1,16 @@
 watermarking_key_args:
   bitlen: 40            # number of bits embedded into each image.
   watermark_type: ptw       # ptw, yu1 or yu2
-  decoder_arch: resnet18    # resnet18 to resnet101
+  decoder_arch: resnet50    # resnet18 to resnet101
 
   ## Load and save
-  key_ckpt: ../pretrained_models/ptw-key-40-bit-ffhq-256-2.pt
+  key_ckpt: ../pretrained_models/ptw-key-40-bit-ffhq-256-resnet50.pt
   ir_se50_weights: ../pretrained_models/model_ir_se50.pth
 
   ## losses
   keygen_lambda_lpips: .75      # LPIPS (image similarity)
-  keygen_lambda_id: .1          # ID loss, only for FFHQ. Also requires providing a valid path to pre-trained weights.
+  keygen_lambda_id: .5          # ID loss, only for FFHQ. Also requires providing a valid path to pre-trained weights.
+  add_preprocessing: True       # increase robustness with preprocessing
 
   ## learning rates
   lr_mapper: 0.001     # learning rate for the mapper
