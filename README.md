@@ -48,8 +48,7 @@ in the `configs` folder. The `configs` folder also contains the configuration fi
 
 You can train your own keys any dataset by adjusting the configuration files. We provide
 two pre-trained keys trained on a facial image dataset (FFHQ). 
-* `pretrained_models/ptw-key-40-bit-ffhq-256-2-v1.pt`: A watermarking key trained on the StyleGAN2 generator trained on the FFHQ dataset.
-* `pretrained_models/ptw-key-40-bit-ffhq-256-2-v2.pt`: A watermarking key trained on the StyleGAN2 generator trained on the AFHQ dataset.
+* `pretrained_models/ptw-key-40-bit-ffhq-256-resnet50.pt`: A watermarking key trained on the StyleGAN2 generator trained on the FFHQ dataset. [link](https://www.dropbox.com/scl/fi/yrej1hli3kn8b6xmdx8nj/ptw-key-40-bit-ffhq-256-resnet50.pt?rlkey=y5ydv0krmehoaje6ecp8d3dvz&dl=0)
 
 **Configuration Files**  
 
