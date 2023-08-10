@@ -18,7 +18,6 @@
     <p>Image Generator Watermarking</p>
 </h1>
 
-
 This repository is the official implementation of our USENIX'23 paper "PTW: Pivotal Tuning Watermarking for 
 Pre-Trained Image Generators".
 This source code makes it possible to watermark _any_ pre-trained image generator (GANs, Diffusion, ..) using few computational resources. The provided code only supports watermarking GANs, but we provide watermarking keys
@@ -37,6 +36,8 @@ If you find our code or paper useful, please cite
   url        = {https://arxiv.org/pdf/2304.07361.pdf}
 }
 ```
+
+<img src="./assets/demo.png">
 
 ## Description
 
